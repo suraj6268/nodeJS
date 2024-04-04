@@ -43,7 +43,7 @@ const user = [
     },
     {
         id : 1,
-        email : "s@gmail.com"
+        email : "p@gmail.com"
     },
     {
         id : 1,
@@ -52,16 +52,46 @@ const user = [
 
 ]
 
-console.log(user[1].email)               // ---> way to acces data
+// console.log(user[1].email)               // ---> way to acces data
 
 
 
 
-console.log(tinderUSer)                                 // { id: '123abc', name: 'sunny', isLoggedIn: false }
-console.log(Object.keys(tinderUSer))                    // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUSer))                  // [ '123abc', 'sunny', false ]
-console.log(Object.entries(tinderUSer))                 // [ [ 'id', '123abc' ], [ 'name', 'sunny' ], [ 'isLoggedIn', false ] ]
+// console.log(tinderUSer)                                 // { id: '123abc', name: 'sunny', isLoggedIn: false }
+// console.log(Object.keys(tinderUSer))                    // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUSer))                  // [ '123abc', 'sunny', false ]
+// console.log(Object.entries(tinderUSer))                 // [ [ 'id', '123abc' ], [ 'name', 'sunny' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUSer.hasOwnProperty('isLoogedIn'))    // false
+// console.log(tinderUSer.hasOwnProperty('isLoogedIn'))    // false
+
+
+
+
+const course = {
+    coursename : "Js in hindi",
+    price : "999",
+    courseInstructor : "Suraj"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor)                       // Suraj
+
+
+const {courseInstructor : instructor} = course
+console.log(instructor)                             // Suraj
+
+
+
+// ++++++++++++++++++++ format of JSON +++++++++++++
+
+// {
+//     "name" : "Suarj",
+//     "coursename" : "Js full tutorial in hindi",
+//     "price" : "Free"
+// }
+
+
 
 
